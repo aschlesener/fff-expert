@@ -1,10 +1,11 @@
 let addToCart = document.getElementById('addToCart');
 let emptyCart =  document.getElementById('emptyCart');
+let scroll = document.getElementById('scroll');
 
 addToCart.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript({
-            file: 'scripts/run_add_cart.js'
+            file: 'scripts/add_cart.js'
         })
     });
 };
@@ -12,7 +13,15 @@ addToCart.onclick = function(element) {
 emptyCart.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript({
-            file: 'scripts/run_remove_cart.js'
+            file: 'scripts/remove_cart.js'
+        })
+    });
+};
+
+scroll.onclick = function(element) {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript({
+            file: 'scripts/scroll.js'
         })
     });
 };

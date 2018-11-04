@@ -1,13 +1,13 @@
 {
     "name": "FFF Expert",
     "version": "0.1",
-    "description": "Get the best add-ons, before they sell out.",
+    "description": "Get the best FFF add-ons, before they sell out.",
     "content_scripts": [
         {
             "matches": [
                 "https://fabfitfun.com/add-ons/*"
             ],
-            "js": ["scripts/jquery-3.3.1.min.js"]
+            "js": ["scripts/jquery-3.3.1.min.js", "scripts/scroll.js"]
         }
     ],
     "background": {
