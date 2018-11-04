@@ -7,8 +7,15 @@
             "matches": [
                 "https://fabfitfun.com/add-ons/*"
             ],
-            "js": ["jquery-3.3.1.min.js", "content.js"]
+            "js": ["scripts/jquery-3.3.1.min.js"]
         }
     ],
+    "background": {
+        "scripts": ["scripts/background.js"]
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "declarativeContent"],
     "manifest_version": 2
 }
