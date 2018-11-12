@@ -42,3 +42,6 @@ The third add-on button will automatically scroll the bottom of the add-on page.
 
  ## License
  MIT
+
+ ## Resources
+[This blog post](https://www.amyschlesener.com/posts/2018/11/writing-a-chrome-extension/) goes more in-depth into the extension background and architecture.
